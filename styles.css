@@ -178,6 +178,59 @@ h1, h2, h3, h4, h5 {
 .scrolled .main-nav a { color: var(--ink-soft); }
 .scrolled .main-nav a:hover { color: var(--green); }
 
+/* ---------- Nav dropdown (desktop) ---------- */
+.nav-dd { position: relative; display: inline-flex; align-items: center; }
+.nav-dd-trigger {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem; font-weight: 500; letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.9);
+  background: none; border: none; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 0.4em;
+  padding: 0;
+  transition: color 0.25s var(--ease);
+}
+.dd-caret { font-size: 0.7em; transition: transform 0.3s var(--ease); }
+.nav-dd:hover .dd-caret, .nav-dd:focus-within .dd-caret { transform: rotate(180deg); }
+.nav-dd-trigger:hover { color: #fff; }
+.scrolled .main-nav .nav-dd-trigger,
+.site-header.solid .main-nav .nav-dd-trigger { color: var(--ink-soft); }
+.scrolled .main-nav .nav-dd-trigger:hover,
+.site-header.solid .main-nav .nav-dd-trigger:hover { color: var(--green); }
+
+.nav-dd-menu {
+  position: absolute; top: 100%; left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  min-width: 252px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(13, 31, 22, 0.14);
+  padding: 0.55rem;
+  margin-top: 0.7rem;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease), visibility 0.3s var(--ease);
+  z-index: 120;
+}
+.nav-dd-menu::before {
+  content: ''; position: absolute; left: 0; right: 0; top: -0.9rem; height: 0.9rem;
+}
+.nav-dd:hover .nav-dd-menu, .nav-dd:focus-within .nav-dd-menu {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.nav-dd-menu a {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem; font-weight: 500;
+  color: var(--ink-soft);
+  padding: 0.72em 0.95em;
+  border-radius: 9px;
+  white-space: nowrap;
+  transition: background 0.25s var(--ease), color 0.25s var(--ease);
+}
+.nav-dd-menu a::after { display: none; }
+.nav-dd-menu a:hover { background: var(--green-tint); color: var(--green); }
+
 .nav-actions { display: flex; align-items: center; gap: 1rem; }
 
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 6px; }
@@ -605,19 +658,20 @@ body.nav-lock { overflow: hidden; }
   }
   .main-nav.open { transform: translateX(0); }
 
-  .main-nav a {
+  /* top-level items + dropdown trigger share the big style */
+  .main-nav > a, .main-nav .nav-dd-trigger {
     font-family: 'Fraunces', serif;
     font-size: 1.3rem; font-weight: 500;
     color: var(--ink);
+    width: 100%;
     padding: 1.05rem 0;
     border-bottom: 1px solid var(--line);
     letter-spacing: 0;
     display: flex; align-items: center; justify-content: space-between;
-    opacity: 0; transform: translateX(16px);
-    transition: opacity 0.45s var(--ease), transform 0.45s var(--ease), color 0.25s var(--ease);
+    gap: 0.5rem;
   }
-  .main-nav a::before { display: none; }
-  .main-nav a::after {
+  .main-nav > a::before { display: none; }
+  .main-nav > a::after {
     content: '\2192';
     position: static; width: auto; height: auto; background: none;
     font-family: 'Inter', sans-serif; font-size: 1rem;
@@ -625,16 +679,54 @@ body.nav-lock { overflow: hidden; }
     opacity: 0; transform: translateX(-6px);
     transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
   }
-  .main-nav a:hover, .main-nav a.active { color: var(--green); }
-  .main-nav a:hover::after, .main-nav a.active::after { opacity: 1; transform: none; }
+  .main-nav > a:hover, .main-nav > a.active { color: var(--green); }
+  .main-nav > a:hover::after, .main-nav > a.active::after { opacity: 1; transform: none; }
 
-  .main-nav.open a { opacity: 1; transform: none; }
-  .main-nav.open a:nth-child(1) { transition-delay: 0.10s; }
-  .main-nav.open a:nth-child(2) { transition-delay: 0.16s; }
-  .main-nav.open a:nth-child(3) { transition-delay: 0.22s; }
-  .main-nav.open a:nth-child(4) { transition-delay: 0.28s; }
-  .main-nav.open a:nth-child(5) { transition-delay: 0.34s; }
-  .main-nav.open a:nth-child(6) { transition-delay: 0.40s; }
+  /* dropdown becomes an accordion */
+  .nav-dd { display: block; width: 100%; position: static; }
+  .nav-dd-trigger { color: var(--ink); }
+  .nav-dd-trigger:hover { color: var(--green); }
+  .nav-dd .dd-caret { font-size: 0.85em; color: var(--green); }
+  .nav-dd:hover .dd-caret { transform: none; }
+  .nav-dd.expanded .dd-caret { transform: rotate(180deg); }
+  .nav-dd-menu {
+    position: static; min-width: 0;
+    background: transparent; border: none; border-radius: 0;
+    box-shadow: none; padding: 0; margin: 0;
+    opacity: 1; visibility: visible; pointer-events: auto;
+    transform: none;
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.4s var(--ease);
+  }
+  .nav-dd-menu::before { display: none; }
+  .nav-dd:hover .nav-dd-menu, .nav-dd:focus-within .nav-dd-menu { transform: none; }
+  .nav-dd.expanded .nav-dd-menu { max-height: 340px; }
+  .nav-dd-menu a {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem; font-weight: 500;
+    color: var(--ink-soft);
+    display: block;
+    padding: 0.85rem 0 0.85rem 1.15rem;
+    margin-left: 0.15rem;
+    border-left: 2px solid var(--green);
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    white-space: normal;
+  }
+  .nav-dd-menu a:hover { background: transparent; color: var(--green); }
+
+  /* reveal + stagger across all top-level items */
+  .main-nav > a, .main-nav > .nav-dd {
+    opacity: 0; transform: translateX(16px);
+    transition: opacity 0.45s var(--ease), transform 0.45s var(--ease), color 0.25s var(--ease);
+  }
+  .main-nav.open > a, .main-nav.open > .nav-dd { opacity: 1; transform: none; }
+  .main-nav.open > *:nth-child(1) { transition-delay: 0.10s; }
+  .main-nav.open > *:nth-child(2) { transition-delay: 0.16s; }
+  .main-nav.open > *:nth-child(3) { transition-delay: 0.22s; }
+  .main-nav.open > *:nth-child(4) { transition-delay: 0.28s; }
+  .main-nav.open > *:nth-child(5) { transition-delay: 0.34s; }
+  .main-nav.open > *:nth-child(6) { transition-delay: 0.40s; }
 
   .nav-toggle { display: flex; z-index: 110; }
 

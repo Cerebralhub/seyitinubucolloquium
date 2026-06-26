@@ -26,6 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
   nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setNav(false)));
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setNav(false); });
 
+  /* ---- Dropdown submenu (accordion on mobile) ---- */
+  nav.querySelectorAll('.nav-dd-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const dd = trigger.closest('.nav-dd');
+      const expanded = dd.classList.toggle('expanded');
+      trigger.setAttribute('aria-expanded', String(expanded));
+    });
+  });
+
   /* ---- Reveal on scroll ---- */
   const revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
