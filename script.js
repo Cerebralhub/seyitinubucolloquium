@@ -10,20 +10,21 @@ document.addEventListener('DOMContentLoaded', () => {
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  /* ---- Mobile nav toggle ---- */
+  /* ---- Mobile nav ---- */
   const toggle = document.getElementById('navToggle');
   const nav = document.getElementById('mainNav');
-  const closeNav = () => {
-    nav.classList.remove('open');
-    toggle.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-  };
-  toggle.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
+  const backdrop = document.getElementById('navBackdrop');
+  const setNav = (open) => {
+    nav.classList.toggle('open', open);
     toggle.classList.toggle('open', open);
     toggle.setAttribute('aria-expanded', String(open));
-  });
-  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+    if (backdrop) backdrop.classList.toggle('show', open);
+    document.body.classList.toggle('nav-lock', open);
+  };
+  toggle.addEventListener('click', () => setNav(!nav.classList.contains('open')));
+  if (backdrop) backdrop.addEventListener('click', () => setNav(false));
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setNav(false)));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setNav(false); });
 
   /* ---- Reveal on scroll ---- */
   const revealEls = document.querySelectorAll('.reveal');
