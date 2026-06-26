@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5 {
     linear-gradient(180deg, rgba(0,60,34,0.45) 0%, rgba(0,40,22,0.35) 35%, rgba(0,45,26,0.9) 100%),
     radial-gradient(120% 80% at 50% 0%, rgba(0,40,22,0.15), rgba(0,40,22,0.6));
 }
-.hero-content { position: relative; z-index: 2; max-width: 880px; margin-top:150px;}
+.hero-content { position: relative; z-index: 2; max-width: 1300px; margin-top:150px;}
 .eyebrow {
   font-size: 0.78rem; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase;
   color: #bff0d6; margin-bottom: 1.4rem;
@@ -569,7 +569,7 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 940px) {
   .main-nav {
     position: fixed; top: 0; right: 0;
-    height: 100vh; width: min(80vw, 320px);
+    height: 50vh; width: min(80vw, 320px);
     background: #ffffff;
     flex-direction: column; justify-content: center;
     gap: 2rem; padding: 2rem;
