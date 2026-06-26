@@ -1,0 +1,9 @@
+<svg viewBox="0 0 480 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Portrait placeholder">
+  <defs><linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eaf3ee"/><stop offset="1" stop-color="#c7e2d4"/></linearGradient></defs>
+  <rect width="480" height="560" fill="url(#pg)"/>
+  <g fill="#008751">
+    <path d="M70 560 C70 410 150 360 240 360 C330 360 410 410 410 560 Z"/>
+    <circle cx="240" cy="232" r="98"/>
+  </g>
+  <rect x="0" y="540" width="480" height="20" fill="#00532f"/>
+</svg>

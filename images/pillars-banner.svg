@@ -1,0 +1,13 @@
+<svg viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nigerians working together">
+  <rect width="1200" height="360" fill="#eef5f1"/>
+  <rect x="0" y="0" width="400" height="360" fill="#008751" opacity="0.10"/>
+  <rect x="800" y="0" width="400" height="360" fill="#008751" opacity="0.10"/>
+  <g>
+    <!-- row of stylised figures -->
+    <g transform="translate(180,90)" fill="#008751"><circle cx="0" cy="0" r="42"/><path d="M-66 230 C-66 120 -34 80 0 80 C34 80 66 120 66 230 Z"/></g>
+    <g transform="translate(360,70)" fill="#00532f"><circle cx="0" cy="0" r="46"/><path d="M-72 250 C-72 130 -36 86 0 86 C36 86 72 130 72 250 Z"/></g>
+    <g transform="translate(560,80)" fill="#00a862"><circle cx="0" cy="0" r="48"/><path d="M-74 250 C-74 130 -38 88 0 88 C38 88 74 130 74 250 Z"/></g>
+    <g transform="translate(760,70)" fill="#00532f"><circle cx="0" cy="0" r="46"/><path d="M-72 250 C-72 130 -36 86 0 86 C36 86 72 130 72 250 Z"/></g>
+    <g transform="translate(950,90)" fill="#008751"><circle cx="0" cy="0" r="42"/><path d="M-66 230 C-66 120 -34 80 0 80 C34 80 66 120 66 230 Z"/></g>
+  </g>
+</svg>

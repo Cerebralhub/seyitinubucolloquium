@@ -1,0 +1,14 @@
+<svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Engagement and dialogue">
+  <rect width="480" height="360" fill="#e7f1ec"/>
+  <!-- speech bubbles -->
+  <g>
+    <rect x="120" y="70" width="150" height="92" rx="20" fill="#008751"/>
+    <path d="M150 162 l0 34 l34 -34 z" fill="#008751"/>
+    <rect x="250" y="120" width="120" height="74" rx="18" fill="#00a862"/>
+    <path d="M340 194 l0 28 l-28 -28 z" fill="#00a862"/>
+  </g>
+  <g fill="#ffffff"><circle cx="160" cy="116" r="9"/><circle cx="195" cy="116" r="9"/><circle cx="230" cy="116" r="9"/></g>
+  <g fill="#ffffff" opacity="0.9"><circle cx="285" cy="157" r="7"/><circle cx="310" cy="157" r="7"/><circle cx="335" cy="157" r="7"/></g>
+  <!-- audience dots -->
+  <g fill="#00532f"><circle cx="150" cy="280" r="20"/><circle cx="215" cy="290" r="22"/><circle cx="285" cy="290" r="22"/><circle cx="350" cy="280" r="20"/></g>
+</svg>

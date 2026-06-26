@@ -1,0 +1,13 @@
+<svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mission">
+  <rect width="560" height="440" fill="#eef5f1"/>
+  <!-- concentric target -->
+  <circle cx="262" cy="222" r="150" fill="none" stroke="#cce5d8" stroke-width="22"/>
+  <circle cx="262" cy="222" r="104" fill="none" stroke="#00a862" stroke-width="22" opacity="0.8"/>
+  <circle cx="262" cy="222" r="58" fill="none" stroke="#008751" stroke-width="22"/>
+  <circle cx="262" cy="222" r="16" fill="#00532f"/>
+  <!-- arrow -->
+  <line x1="420" y1="70" x2="280" y2="208" stroke="#00532f" stroke-width="10" stroke-linecap="round"/>
+  <path d="M262 222 l40 -16 l-22 -22 z" fill="#00532f"/>
+  <g fill="#008751"><path d="M420 70 l34 -8 l-8 34 z"/></g>
+  <path d="M408 86 l30 -6 l-6 30 z" fill="#00a862"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg viewBox="0 0 420 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Future Together Declaration">
+  <rect width="420" height="460" fill="none"/>
+  <rect x="90" y="50" width="240" height="320" rx="8" fill="#f7faf8" transform="rotate(-5 210 210)"/>
+  <rect x="100" y="70" width="240" height="320" rx="8" fill="#ffffff" stroke="#cdd9d2"/>
+  <g fill="#008751"><rect x="128" y="108" width="184" height="12" rx="6"/></g>
+  <g fill="#cfe0d7"><rect x="128" y="142" width="184" height="8" rx="4"/><rect x="128" y="162" width="184" height="8" rx="4"/><rect x="128" y="182" width="150" height="8" rx="4"/><rect x="128" y="212" width="184" height="8" rx="4"/><rect x="128" y="232" width="184" height="8" rx="4"/><rect x="128" y="252" width="120" height="8" rx="4"/></g>
+  <!-- seal -->
+  <circle cx="262" cy="330" r="46" fill="#008751"/>
+  <circle cx="262" cy="330" r="46" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.6"/>
+  <path d="M262 304 l7 21 h22 l-18 13 l7 21 l-18 -13 l-18 13 l7 -21 l-18 -13 h22 z" fill="#ffffff"/>
+  <path d="M244 372 l0 46 l18 -14 l18 14 l0 -46 z" fill="#006b40"/>
+</svg>

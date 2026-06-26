@@ -1,0 +1,23 @@
+<svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abuja, Nigeria">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f9f6"/><stop offset="1" stop-color="#e3efe9"/></linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a9890"/><stop offset="1" stop-color="#5d6a62"/></linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#sky)"/>
+  <circle cx="120" cy="100" r="46" fill="#cfe9dc"/>
+  <!-- Aso Rock monolith -->
+  <path d="M300 360 C300 200 400 120 470 150 C545 182 560 300 575 360 Z" fill="url(#rock)"/>
+  <path d="M250 360 C255 250 320 190 380 205 C300 225 290 300 300 360 Z" fill="#6f7d74" opacity="0.7"/>
+  <!-- ground -->
+  <rect x="0" y="360" width="600" height="90" fill="#008751"/>
+  <rect x="0" y="360" width="600" height="14" fill="#00a862"/>
+  <!-- National Assembly building with green dome -->
+  <rect x="70" y="288" width="150" height="72" fill="#ffffff" stroke="#cdd9d2"/>
+  <rect x="70" y="288" width="150" height="10" fill="#e7efe9"/>
+  <path d="M110 288 a35 35 0 0 1 70 0 z" fill="#008751"/>
+  <circle cx="145" cy="253" r="6" fill="#00a862"/>
+  <g fill="#dfe9e3"><rect x="86" y="312" width="14" height="40"/><rect x="116" y="312" width="14" height="40"/><rect x="146" y="312" width="14" height="40"/><rect x="176" y="312" width="14" height="40"/></g>
+  <!-- tower -->
+  <rect x="245" y="250" width="44" height="110" fill="#ffffff" stroke="#cdd9d2"/>
+  <g fill="#bcd6c8"><rect x="253" y="262" width="28" height="10"/><rect x="253" y="282" width="28" height="10"/><rect x="253" y="302" width="28" height="10"/><rect x="253" y="322" width="28" height="10"/></g>
+</svg>

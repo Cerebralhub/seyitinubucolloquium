@@ -1,0 +1,6 @@
+<svg viewBox="0 0 240 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Young Nigerians collaborating">
+  <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eaf3ee"/><stop offset="1" stop-color="#c9e3d5"/></linearGradient></defs>
+  <rect width="240" height="400" fill="url(#g1)"/>
+  <g transform="translate(80,150)" fill="#008751"><circle cx="0" cy="0" r="44"/><path d="M-70 250 C-70 130 -36 88 0 88 C36 88 70 130 70 250 Z"/></g>
+  <g transform="translate(165,180)" fill="#00532f"><circle cx="0" cy="0" r="38"/><path d="M-60 220 C-60 120 -30 80 0 80 C30 80 60 120 60 220 Z"/></g>
+</svg>

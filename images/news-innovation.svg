@@ -1,0 +1,11 @@
+<svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Innovation in Nigeria">
+  <rect width="480" height="300" fill="#eaf3ee"/>
+  <g stroke="#00a862" stroke-width="3" fill="none" opacity="0.55">
+    <path d="M40 60 H140 V120"/><path d="M440 90 H360 V160"/><path d="M40 250 H160 V200"/><path d="M440 240 H330 V190"/>
+  </g>
+  <g fill="#00a862" opacity="0.55"><circle cx="40" cy="60" r="6"/><circle cx="440" cy="90" r="6"/><circle cx="40" cy="250" r="6"/><circle cx="440" cy="240" r="6"/></g>
+  <circle cx="240" cy="135" r="64" fill="#008751"/>
+  <path d="M240 86 a40 40 0 0 1 22 73 l-3 16 h-38 l-3 -16 a40 40 0 0 1 22 -73 z" fill="#ffffff"/>
+  <rect x="225" y="178" width="30" height="12" rx="3" fill="#00532f"/>
+  <rect x="229" y="192" width="22" height="9" rx="3" fill="#00532f"/>
+</svg>

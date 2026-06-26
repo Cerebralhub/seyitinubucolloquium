@@ -1,0 +1,15 @@
+<svg viewBox="0 0 480 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nigerian national emblem">
+  <rect width="480" height="600" fill="#eef5f1"/>
+  <g>
+    <!-- flag bands panel -->
+    <rect x="60" y="90" width="120" height="420" fill="#008751"/>
+    <rect x="180" y="90" width="120" height="420" fill="#ffffff"/>
+    <rect x="300" y="90" width="120" height="420" fill="#008751"/>
+    <rect x="60" y="90" width="360" height="420" fill="none" stroke="#00532f" stroke-width="2" opacity="0.25"/>
+  </g>
+  <!-- central roundel -->
+  <circle cx="240" cy="300" r="118" fill="#ffffff" stroke="#008751" stroke-width="8"/>
+  <!-- star -->
+  <path d="M240 232 l20 60 h63 l-51 37 l20 60 l-52 -37 l-52 37 l20 -60 l-51 -37 h63 z" fill="#008751"/>
+  <text x="240" y="500" text-anchor="middle" font-family="Georgia, serif" font-size="34" letter-spacing="6" fill="#00532f">NIGERIA</text>
+</svg>

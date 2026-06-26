@@ -1,0 +1,11 @@
+<svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Collaboration">
+  <rect width="480" height="360" fill="#eaf3ee"/>
+  <g fill="none" stroke-width="14">
+    <circle cx="190" cy="180" r="78" stroke="#008751"/>
+    <circle cx="290" cy="180" r="78" stroke="#00a862" opacity="0.85"/>
+    <circle cx="240" cy="240" r="78" stroke="#00532f" opacity="0.75"/>
+  </g>
+  <g fill="#00532f">
+    <circle cx="190" cy="180" r="14"/><circle cx="290" cy="180" r="14"/><circle cx="240" cy="240" r="14"/>
+  </g>
+</svg>

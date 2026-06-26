@@ -1,0 +1,19 @@
+<svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vision">
+  <defs>
+    <linearGradient id="vsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eaf3ee"/><stop offset="1" stop-color="#d3ebe0"/></linearGradient>
+    <linearGradient id="vsun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00a862"/><stop offset="1" stop-color="#008751"/></linearGradient>
+  </defs>
+  <rect width="560" height="440" fill="url(#vsky)"/>
+  <!-- guiding star -->
+  <path d="M430 80 l9 26 h27 l-22 16 l9 27 l-23 -17 l-23 17 l9 -27 l-22 -16 h27 z" fill="#008751"/>
+  <!-- sun -->
+  <circle cx="280" cy="300" r="92" fill="url(#vsun)"/>
+  <g stroke="#00a862" stroke-width="6" stroke-linecap="round" opacity="0.7">
+    <line x1="280" y1="150" x2="280" y2="178"/><line x1="170" y1="200" x2="190" y2="220"/><line x1="390" y1="200" x2="370" y2="220"/>
+  </g>
+  <!-- hills -->
+  <path d="M0 360 C120 320 200 360 280 350 C380 338 460 300 560 350 L560 440 L0 440 Z" fill="#00532f"/>
+  <path d="M0 392 C140 360 240 400 340 388 C440 376 500 360 560 388 L560 440 L0 440 Z" fill="#006b40"/>
+  <!-- path -->
+  <path d="M250 440 C270 400 250 390 280 360 C310 390 290 400 310 440 Z" fill="#cfe9dc" opacity="0.85"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Youth participation">
+  <rect width="480" height="300" fill="#e7f1ec"/>
+  <g transform="translate(140,120)" fill="#008751"><circle cx="0" cy="0" r="34"/><path d="M-54 200 C-54 100 -27 64 0 64 C27 64 54 100 54 200 Z"/></g>
+  <g transform="translate(240,100)" fill="#00532f"><circle cx="0" cy="0" r="38"/><path d="M-58 200 C-58 96 -29 60 0 60 C29 60 58 96 58 200 Z"/></g>
+  <g transform="translate(340,120)" fill="#00a862"><circle cx="0" cy="0" r="34"/><path d="M-54 200 C-54 100 -27 64 0 64 C27 64 54 100 54 200 Z"/></g>
+</svg>
