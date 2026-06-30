@@ -502,6 +502,9 @@ body.nav-lock { overflow: hidden; }
 .social-row { display: flex; gap: 1.6rem; justify-content: center; margin-top: 2.2rem; }
 .social-row a { color: var(--ink-soft); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.25s var(--ease); }
 .social-row a:hover { color: var(--green); }
+.contact-email { margin-top: 1.4rem; color: var(--muted); font-size: 0.95rem; }
+.contact-email a { color: var(--green); font-weight: 600; text-decoration: none; transition: color 0.25s var(--ease); }
+.contact-email a:hover { color: var(--green-deep); text-decoration: underline; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--green-deep); color: #ffffff; padding: clamp(56px, 8vw, 90px) 0 2.5rem; }
